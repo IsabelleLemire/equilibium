@@ -6,7 +6,7 @@ import CardBody from "../card-body/CardBody";
 import CardInformation from "../card-information/CardInformation";
 import CardFooter from "../card-footer/CardFooter";
 
-const Card = () => {
+const Card = ( ) => {
   return (
     <article className="card">
         <Image />
