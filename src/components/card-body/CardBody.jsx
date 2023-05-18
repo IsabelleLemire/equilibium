@@ -1,10 +1,10 @@
 import React from 'react';
 import "./CardBody.css";
 
-const CardBody = () => {
+const CardBody = (props) => {
   return (
     <div className="card-body">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda natus praesentium beatae cumque aperiam temporibus.</p>
+        <p>{props.content}</p>
     </div>
   )
 }
