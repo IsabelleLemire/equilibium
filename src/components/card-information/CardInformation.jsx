@@ -1,13 +1,13 @@
 import React from 'react';
 import "./CardInformation.css";
 
-const CardInformation = () => {
+const CardInformation = (props) => {
   return (
     <div className="card-information">
-        <span className="right">0.004ETH</span>
-        <time className="left">3 days left</time>
+        <span className="right">{props.ethAmount}</span>
+        <time className="left">{props.timeLeft}</time>
     </div>
   );
 }; 
 
-export default CardInformation
+export default CardInformation;

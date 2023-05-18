@@ -6,11 +6,11 @@ import CardBody from "../card-body/CardBody";
 import CardInformation from "../card-information/CardInformation";
 import CardFooter from "../card-footer/CardFooter";
 
-const Card = ( ) => {
+const Card = (props) => {
   return (
     <article className="card">
         <Image />
-        <CardTitle />
+        <CardTitle title={props.title} />
         <CardBody />
         <CardInformation />
         <CardFooter />
