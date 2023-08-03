@@ -11,11 +11,12 @@ const Card = (props) => {
     <article className="card">
         <Image />
         <CardTitle title={props.title} />
-        <CardBody />
-        <CardInformation />
-        <CardFooter />
+        <CardBody content={props.content} />
+        <CardInformation ethAmount={props.ethAmount} timeLeft={props.timeLeft} />
+        <CardFooter author={props.author} />
     </article>
   );
 };
+
 
 export default Card;
